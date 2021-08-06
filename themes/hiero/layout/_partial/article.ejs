@@ -47,10 +47,9 @@
       <% if (!index && theme.donate.enable){ %>
         <%- partial('donate') %>
       <% } %>
-            
-      <% if (!index && post.comments && (theme.gentie_productKey || theme.duoshuo_shortname || theme.disqus_shortname || theme.uyan_uid || theme.wumii || theme.livere_shortname || theme.gitment.owner)){ %>
-        <%- partial('comment') %>
-      <% } %>
+
+      <%- partial('comment') %>
+
     </footer>
   </div>
   <% if (!index){ %>
