@@ -119,9 +119,6 @@ facebook_sdk:
   like_button: #true
   webmaster: #true
 
-# CNZZ count
-cnzz_siteid: 1260716016
-
 # donation button
 donate:
   enable: false

@@ -12,22 +12,12 @@
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
-<% } %>
-
-<%- partial('post/mathjax.ejs') %>
-
-<% if (theme.fancybox){ %>
-  <%- css('https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css') %>
-  <%- js('https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js') %>
-<% } %>
-
-<%- js('js/scripts') %>
-<%- js('https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js') %>
-<%- js('js/main') %>
-
-<%- partial('google-analytics') %>
-<%- partial('gauges-analytics') %>
-<%- partial('cnzz-analytics') %>
-<%- partial('busuanzi-analytics') %>
-<%- partial('baidu-analytics') %>
-<%- partial('tencent-analytics') %>
+<% } %> <%- partial('post/mathjax.ejs') %> <% if (theme.fancybox){ %> <%-
+css('https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css')
+%> <%-
+js('https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js')
+%> <% } %> <%- js('js/scripts') %> <%-
+js('https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js') %>
+<%- js('js/main') %> <%- partial('google-analytics') %> <%-
+partial('gauges-analytics') %> <%- partial('busuanzi-analytics') %> <%-
+partial('baidu-analytics') %> <%- partial('tencent-analytics') %>
