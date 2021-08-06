@@ -3,20 +3,6 @@
   <head>
     <meta charset="utf-8" />
 
-    <!-- PACE Progress Bar START -->
-    <% if(theme.progressBar.enable && theme.progressBar.themeCSS){ %> <%-
-    js('https://raw.githubusercontent.com/HubSpot/pace/v1.0.2/pace.min.js') %>
-    <%- css(theme.progressBar.themeCSS) %> <% } %> <%
-    if(theme.progressBar.enable && !theme.progressBar.themeCSS){ %>
-    <script>
-      alert(
-        "[PACE.js]错误：加载进度条的themeCSS设置可能不正确，请检查主题的_config.yml"
-      );
-    </script>
-    <% } %>
-
-    <!-- PACE Progress Bar START -->
-
     <% var title = page.title; if (is_archive()){ title = __('archive_a'); if
     (is_month()){ title += ': ' + page.year + '/' + page.month; } else if
     (is_year()){ title += ': ' + page.year; } } else if (is_category()){ title =
