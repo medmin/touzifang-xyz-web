@@ -7,6 +7,9 @@ tags:
 - 住宅房地产
 - STR
 - short term rental
+
+categories:
+- 美国房地产基本知识
 ---
 
 ### 目前美国的房地产基本分为两大类:
