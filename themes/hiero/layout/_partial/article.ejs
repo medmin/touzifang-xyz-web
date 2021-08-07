@@ -47,7 +47,9 @@
         <%- partial('donate') %>
       <% } %>
 
-      <%- partial('comment') %>
+      <% if (!index && post.comments) { %>
+        <%- partial('comment') %>
+      <% } %>
 
     </footer>
   </div>
