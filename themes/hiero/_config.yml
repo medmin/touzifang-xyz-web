@@ -36,7 +36,7 @@ random_thumb: false
 
 # Post Article's Content
 post_catalog:
-  enable: true
+  enable: false
 
 # Sidebar like in homepage, is necessary to disable [post_catalog]
 post_sidebar:

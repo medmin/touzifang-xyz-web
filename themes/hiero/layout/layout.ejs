@@ -12,7 +12,7 @@
   <div id="container">
     <div id="wrap">
             
-      <div id="content" class="outer">
+      <div id="content" class="outer <%= is_post() && 'is_post' %>">
         <% if (theme.sidebar && theme.sidebar !== 'bottom' && !is_post()){ %>
           <section id="main"><%- body %></section>
           <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
