@@ -14,7 +14,7 @@ tags:
 - 住宅房地产，英文是`residential real estate`
 
 ### 商业房地产根据用途，又可以分为三类
-- `Office`，就是用于办公室
+- `Office`，就是用于各类办公室，有的是一层，有的是办公大楼，档次有高有低
 - `Industrial`，这个主要是各类厂房
 - `Retail`，这个是各类店铺、商场等
 
