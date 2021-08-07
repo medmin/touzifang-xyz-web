@@ -1,7 +1,12 @@
 ---
 title: 美国房地产基本知识之一： 房地产分类
 date: 2021-08-06 23:47:04
-tags: CRE, 商业房地产, 住宅房地产, STR, short term rental
+tags: 
+- CRE
+- 商业房地产
+- 住宅房地产
+- STR
+- short term rental
 ---
 
 ### 目前美国的房地产基本分为两大类:
