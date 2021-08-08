@@ -13,7 +13,7 @@ categories:
 ---
 
 ### 目前美国的房地产基本分为两大类:
-- 商业房地产，英文是`commercial real estate`
+- 商业房地产，英文是`commercial real estate`，简称`CRE`
 - 住宅房地产，英文是`residential real estate`
 
 ### 商业房地产根据用途，又可以分为三类
