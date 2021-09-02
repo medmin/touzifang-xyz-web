@@ -1,5 +1,5 @@
 ---
-title: 美国31县贡献了约三分之一的GDP
+title: 美国31个县贡献了约三分之一的GDP
 date: 2021-09-01 22:20:14
 tags: 
 categories:
