@@ -45,3 +45,5 @@ Bloomberg的一篇文章，分析了美国经济分析局(Bureau of Economic Ana
 
 
 所以，这和房地产有什么关系？既然北上广深的房子永远涨，你可以说，这31个县的房子永远涨。买房子肯定首选这些县。
+
+阅读原文: [A Third of America’s Economy Is Concentrated in Just 31 Counties](https://www.bloomberg.com/graphics/2019-us-gdp-concentration-counties/)
