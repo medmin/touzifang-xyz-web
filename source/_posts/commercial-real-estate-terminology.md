@@ -1,7 +1,9 @@
 ---
 title: 美国房地产基本知识之二：商业房地产专业术语
 date: 2021-08-07 21:56:46
-tags: CRE, 商业房地产, terminolgy
+tags: 
+- CRE
+- 商业房地产
 categories:
 - 美国房地产基本知识
 ---
