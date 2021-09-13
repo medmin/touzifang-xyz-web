@@ -10,7 +10,7 @@ categories:
 
 首先，先上图：
 
-![image](https://www.visualcapitalist.com/wp-content/uploads/2020/09/us-metro-areas-by-gdp.jpg)
+![us-metro-areas-by-gdp.jpeg](https://i.loli.net/2021/09/12/LNzqjgVawFpQx1J.jpg)
 
 | Rank	| Metro Area   |State codes |	GDP (2018) | 
 | ---- |---- |----  | ----      |
