@@ -155,9 +155,7 @@ Hiero 已完全支持网易云跟帖、多说、 Disqus评论功能. 您可以�
 
 ```yml
 # comment ShortName, you can choose only ONE to display.
-gentie_productKey: #网易云跟帖your-gentie-product-key
-duoshuo_shortname: iTimeTraveler
-disqus_shortname: 
+
 ```
 
 - #### 网易云跟帖说明

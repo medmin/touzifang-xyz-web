@@ -47,14 +47,16 @@
         <%- partial('donate') %>
       <% } %>
 
-      <% if (!index && post.comments) { %>
-        <%- partial('comment') %>
-      <% } %>
+
 
     </footer>
   </div>
   <% if (!index){ %>
     <%- partial('post/nav') %>
+  <% } %>
+
+  <% if (!index && post.comments) { %>
+    <%- partial('comment') %>
   <% } %>
 </article>
 
