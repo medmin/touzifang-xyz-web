@@ -113,7 +113,7 @@ Hiero  使用 `Insight Search` 来帮助大家使用站内搜索.
 search:
     insight: true # you need to install `hexo-generator-json-content` before using Insight Search
     swiftype: # enter swiftype install key here
-    baidu: false # you need to disable other search engines to use Baidu search, options: true, false
+
 ```
 
 > ！！注意: 使用搜索工具之前您必须使用 `hexo-generator-json-content` 来安装，在Hexo根目录下执行命令如下：

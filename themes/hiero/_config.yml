@@ -94,13 +94,8 @@ show_count: true
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
 google_site_verification:
-baidu_site_verification:
-qihu_site_verification:
 
 # Miscellaneous
-gauges_analytics:
-baidu_analytics:
-tencent_analytics:
 twitter: touzifang
 fb_admins:
 fb_app_id:

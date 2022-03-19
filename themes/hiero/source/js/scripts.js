@@ -66,9 +66,6 @@
           '<a href="http://pinterest.com/pin/create/button/?url=' +
             encodedUrl +
             '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
-          '<a href="https://plus.google.com/share?url=' +
-            encodedUrl +
-            '" class="article-share-google" target="_blank" title="Google+"></a>',
           "</div>",
           "</div>",
         ].join("");
