@@ -25,22 +25,7 @@
       name="keywords"
       content="<% page.tags.forEach(function(tag, i){ %><%- tag.name %><% }) %>"
     />
-    <% }%> <% if (theme.google_site_verification){ %>
-    <meta
-      name="google-site-verification"
-      content="<%- theme.google_site_verification %>"
-    />
-    <% } %> <% if (theme.baidu_site_verification){ %>
-    <meta
-      name="baidu-site-verification"
-      content="<%- theme.baidu_site_verification %>"
-    />
-    <% } %> <% if (theme.qihu_site_verification){ %>
-    <meta
-      name="360-site-verification"
-      content="<%- theme.qihu_site_verification %>"
-    />
-    <% } %> <%- open_graph({twitter_id: theme.twitter, google_plus:
+    <% }%> <%- open_graph({twitter_id: theme.twitter, google_plus:
     theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id})
     %> <% if (theme.rss){ %>
     <link
@@ -132,5 +117,20 @@
 
     <!-- Custom CSS -->
     <%- css('css/my.css') %>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Z00BGQYHLF"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-Z00BGQYHLF");
+    </script>
   </head>
 </html>
