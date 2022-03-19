@@ -98,12 +98,10 @@ baidu_site_verification:
 qihu_site_verification:
 
 # Miscellaneous
-google_analytics:
 gauges_analytics:
 baidu_analytics:
 tencent_analytics:
-twitter:
-google_plus:
+twitter: touzifang
 fb_admins:
 fb_app_id:
 
