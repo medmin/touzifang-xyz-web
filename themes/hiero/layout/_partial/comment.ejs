@@ -1,8 +1,23 @@
-<form>
+<form id="comment-form">
   <input placeholder="username" />
   <input placeholder="comment" />
   <button>Submit</button>
 </form>
 <div></div>
 
-<script type="text/javascript"></script>
+<script>
+  $("#comment-form").on("click", onClick);
+
+  function onClick(e) {
+    e.preventDefault();
+    grecaptcha.ready(function () {
+      grecaptcha
+        .execute("6LcbNsAZAAAAAOi1-qBn4LrVlzUyfylMm7TlXvqS", {
+          action: "submit-comment",
+        })
+        .then(function (token) {
+          console.log("token", token);
+        });
+    });
+  }
+</script>
