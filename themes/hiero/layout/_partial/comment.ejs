@@ -13,7 +13,7 @@
     grecaptcha.ready(function () {
       grecaptcha
         .execute("6LcbNsAZAAAAAOi1-qBn4LrVlzUyfylMm7TlXvqS", {
-          action: "comment",
+          action: "submit/comment",
         })
         .then(function (token) {
           console.log("token", token);
