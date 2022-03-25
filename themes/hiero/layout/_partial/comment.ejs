@@ -1,7 +1,14 @@
 <form id="comment-form">
-  <input placeholder="username" />
-  <input placeholder="comment" />
-  <button>Submit</button>
+  <input type="text" name="username" placeholder="用户名" />
+  <input type="email" name="email" placeholder="电子邮件" />
+  <textarea
+    rows="4"
+    name="comment"
+    placeholder="评论内容"
+    required
+    form="comment-form"
+  ></textarea>
+  <button>提交</button>
 </form>
 <div></div>
 
