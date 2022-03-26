@@ -1016,9 +1016,13 @@ body.search .page .entry-footer {
   padding: 0;
   text-align: center;
   border: none;
+  width: 40px;
+  height: 40px;
 }
 .widget_athemes_social_icons li a {
   display: block;
+  width: 40px;
+  height: 40px;
 }
 .widget_athemes_social_icons li a [class^="fa"]:before {
   width: 40px;
@@ -1033,6 +1037,11 @@ body.search .page .entry-footer {
 }
 .widget_athemes_social_icons li a:hover [class^="ico-"]:before {
   background: #ff2828;
+}
+
+.widget_athemes_social_icons svg {
+  width: 40px !important;
+  height: 40px;
 }
 
 /* Widget Flickr */
