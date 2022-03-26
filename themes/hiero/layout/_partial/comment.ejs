@@ -1,6 +1,6 @@
 <form id="comment-form">
-  <input type="text" name="username" placeholder="用户名" />
-  <input type="email" name="email" placeholder="电子邮件" />
+  <input type="text" name="username" required placeholder="用户名" />
+  <input type="email" name="email" required placeholder="电子邮件" />
   <textarea
     rows="4"
     name="comment"
@@ -13,17 +13,47 @@
 <div></div>
 
 <script>
-  $("#comment-form").on("click", onClick);
+  $("#comment-form").on("submit", onSubmit);
 
-  function onClick(e) {
+  const form = document.getElementById("comment-form");
+
+  function onSubmit(e) {
     e.preventDefault();
+    e.stopPropagation();
+
+    const email = form.querySelector("input[name='email']").value;
+    const username = form.querySelector("input[name='username']").value;
+    const comment = form.querySelector("textarea[name='comment']").value;
+    const pathname = window.location.pathname;
+
     grecaptcha.ready(function () {
       grecaptcha
         .execute("6LcbNsAZAAAAAOi1-qBn4LrVlzUyfylMm7TlXvqS", {
           action: "submit/comment",
         })
         .then(function (token) {
-          console.log("token", token);
+          fetch(
+            "https://touzifang-xyz-lambda.netlify.app/.netlify/functions/comment",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "text/plain; charset=utf-8", // ! important
+              },
+              body: JSON.stringify({
+                token,
+                email,
+                username,
+                comment,
+                pathname,
+              }),
+            }
+          )
+            .then((response) => {
+              return response.json();
+            })
+            .then((res) => {
+              console.log("res", res);
+            });
         });
     });
   }
