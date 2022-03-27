@@ -53,10 +53,6 @@
               return response.json();
             })
             .then((res) => {
-              const notyf = new Notyf({
-                option: { x: "right", y: "top" },
-                dismissible: true,
-              });
               if (res.ok) {
                 notyf.success("Comment Added!");
               } else {
