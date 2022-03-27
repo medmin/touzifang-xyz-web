@@ -10,7 +10,6 @@
   ></textarea>
   <button>提交</button>
 </form>
-<div></div>
 
 <script>
   $("#comment-form").on("submit", onSubmit);
@@ -40,11 +39,14 @@
                 "Content-Type": "text/plain; charset=utf-8", // ! important
               },
               body: JSON.stringify({
-                token,
-                email,
-                username,
-                comment,
-                pathname,
+                opt: "ADD",
+                data: {
+                  token,
+                  email,
+                  username,
+                  comment,
+                  pathname,
+                },
               }),
             }
           )
