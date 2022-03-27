@@ -12,6 +12,7 @@
 </form>
 
 <script>
+  $(document).ready(getComments);
   $("#comment-form").on("submit", onSubmit);
 
   const form = document.getElementById("comment-form");
@@ -57,6 +58,50 @@
                 notyf.success("Comment Added!");
               } else {
                 notyf.error("Failed to Add Comment!");
+              }
+            });
+        });
+    });
+  }
+
+  function getComments() {
+    grecaptcha.ready(function () {
+      grecaptcha
+        .execute("6LcbNsAZAAAAAOi1-qBn4LrVlzUyfylMm7TlXvqS", {
+          action: "get/comment",
+        })
+        .then(function (token) {
+          fetch(
+            "https://touzifang-xyz-lambda.netlify.app/.netlify/functions/comment",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "text/plain; charset=utf-8", // ! important
+              },
+              body: JSON.stringify({
+                opt: "GET",
+                token,
+                data: {
+                  url: window.location.pathname,
+                },
+              }),
+            }
+          )
+            .then((response) => {
+              return response.json();
+            })
+            .then((res) => {
+              const comments = res.data;
+              $("<ul id='comments'></ul>").appendTo("#main > article");
+              for (const { username, created_at, comment } of comments) {
+                $(`<li>
+                    <span>
+                      Username: ${username} Created At: ${new Date(
+                  created_at
+                ).toLocaleString()}
+                    </span>
+                    <div>${comment}</div>
+                  </li>`).appendTo("#comments");
               }
             });
         });
