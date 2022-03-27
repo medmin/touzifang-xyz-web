@@ -23,7 +23,6 @@
     const email = form.querySelector("input[name='email']").value;
     const username = form.querySelector("input[name='username']").value;
     const comment = form.querySelector("textarea[name='comment']").value;
-    const pathname = window.location.pathname;
 
     grecaptcha.ready(function () {
       grecaptcha
@@ -45,7 +44,7 @@
                   email,
                   username,
                   comment,
-                  pathname,
+                  url: window.location.pathname,
                 },
               }),
             }
