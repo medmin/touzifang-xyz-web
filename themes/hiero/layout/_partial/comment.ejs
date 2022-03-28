@@ -1,4 +1,4 @@
-<form id="comment-form">
+<form id="commentForm">
   <input type="text" name="username" required placeholder="用户名" />
   <input type="email" name="email" required placeholder="电子邮件" />
   <textarea
@@ -6,16 +6,35 @@
     name="comment"
     placeholder="评论内容"
     required
-    form="comment-form"
+    form="commentForm"
   ></textarea>
   <button>提交</button>
 </form>
 
 <script>
-  $(document).ready(getComments);
-  $("#comment-form").on("submit", onSubmit);
+  const form = document.getElementById("commentForm");
 
-  const form = document.getElementById("comment-form");
+  const options = {
+    threshold: 0,
+  };
+
+  const cb = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        if (document.getElementById("comments")) return;
+        getComments();
+      }
+    });
+  };
+  const observer = new IntersectionObserver(cb, options);
+  observer.observe(form);
+  form.addEventListener("beforeunload", (event) => {
+    event.preventDefault();
+    observer.disconnect();
+    return;
+  });
+
+  $("#commentForm").on("submit", onSubmit);
 
   function onSubmit(e) {
     e.preventDefault();
@@ -95,13 +114,13 @@
               $("<ul id='comments'></ul>").appendTo("#main > article");
               for (const { username, created_at, comment } of comments) {
                 $(`<li>
-                    <span>
-                      Username: ${username} Created At: ${new Date(
+                      <span>
+                        Username: ${username} Created At: ${new Date(
                   created_at
                 ).toLocaleString()}
-                    </span>
-                    <div>${comment}</div>
-                  </li>`).appendTo("#comments");
+                      </span>
+                      <div>${comment}</div>
+                    </li>`).appendTo("#comments");
               }
             });
         });
