@@ -1,6 +1,9 @@
 <form id="commentForm">
-  <input type="text" name="username" required placeholder="用户名" />
-  <input type="email" name="email" required placeholder="电子邮件" />
+  <div class="userInfo">
+    <input type="text" name="username" required placeholder="用户名" />
+    <input type="email" name="email" required placeholder="电子邮件" />
+  </div>
+
   <textarea
     rows="4"
     name="comment"
@@ -23,7 +26,7 @@
       if (entry.isIntersecting) {
         if (document.getElementById("comments")) return;
 
-        if (!grecaptcha) {
+        if (!window.grecaptcha) {
           setTimeout(() => {
             getComments()
           }, 500);
