@@ -684,7 +684,7 @@ hexo-renderer-marked@^5.0.0:
     jsdom "^19.0.0"
     marked "^4.0.1"
 
-hexo-renderer-stylus@^2.0.1:
+hexo-renderer-stylus@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/hexo-renderer-stylus/-/hexo-renderer-stylus-2.1.0.tgz#4cbae08d36c7390b791c2cc3df7c53c3ff615106"
   integrity sha512-Nef4YCr7JX8jaRaByhzXMSsWnDed+RgJj6aU/ARnYu3Bn5xz/qRz52VJG7KqD0Xuysxa9TIBdVUgNzBrSFn3DQ==
@@ -725,7 +725,7 @@ hexo-util@^2.0.0, hexo-util@^2.5.0, hexo-util@^2.7.0, hexo-util@latest:
     prismjs "^1.17.1"
     strip-indent "^3.0.0"
 
-hexo@^6.1.0:
+hexo@^6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/hexo/-/hexo-6.3.0.tgz#10c940aaf86e2fbaf8a0db7cb79fc1fe4d6e1180"
   integrity sha512-4Jq+rWd8sYvR1YdIQyndN/9WboQ/Mqm6eax8CjrjO+ePFm2oMVafSOx9WEyJ42wcLOHjfyMfnlQhnUuNmJIpPg==
@@ -1080,7 +1080,7 @@ negotiator@0.6.3:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.3.tgz#58e323a72fedc0d6f9cd4d31fe49f51479590ccd"
   integrity sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==
 
-nib@^1.2.0, "nib@git+https://github.com/stylus/nib.git":
+nib@^1.2.0:
   version "1.2.0"
   resolved "git+https://github.com/stylus/nib.git#5e2651e8c0f180beb6b2eff8f2110d0180246f19"
 
