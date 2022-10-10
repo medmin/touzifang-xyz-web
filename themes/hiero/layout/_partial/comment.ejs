@@ -22,7 +22,14 @@
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         if (document.getElementById("comments")) return;
-        getComments();
+
+        if (!grecaptcha) {
+          setTimeout(() => {
+            getComments()
+          }, 500);
+        } else {
+          getComments();
+        }
       }
     });
   };
